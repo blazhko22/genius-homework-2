@@ -94,6 +94,7 @@ ul {
 /* Header style */
 
 .header {
+    position: absolute;
     font-weight: 700;
     background-color: var(--color-header-light);
     width: 100%;
@@ -158,6 +159,36 @@ ul {
 /*Main*/
 /* Hero style */
 
+.section__hero {
+    background-image: linear-gradient(
+            89.38deg,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0.8509),
+            rgba(255, 255, 255, 0.1932),
+            rgba(255, 255, 255, 0)
+        ),
+        url(../images/backround-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 657px;
+}
+
+.container-hero {
+    display: flex;
+    flex-direction: column;
+    padding: 122px 106px;
+    gap: 40px;
+    width: 529px;
+}
+
+.section__hero-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* width: 529px; */
+}
+
 .section__hero-block-name {
     font-weight: 400;
     font-size: 18px;
@@ -173,12 +204,22 @@ ul {
     color: var(--color-primary-normal);
 }
 
+.section__hero-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 238px;
+}
+
 .section__hero-box-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.17;
     border: none;
+    padding: 16px 32px;
+    cursor: pointer;
+    border-radius: 32px;
 
     background-color: var(--color-primary-normal);
     color: var(--color-primary-light);
@@ -188,6 +229,7 @@ ul {
     font-size: 14px;
     line-height: 1.29;
     color: var(--color-secondary-dark);
+    text-align: center;
 }
 
 /* Title color */
@@ -205,7 +247,18 @@ ul {
 
 /* Reincarnation section */
 
+.container-reincarnation {
+    display: flex;
+    gap: 32px;
+    padding-top: 106px;
+}
+
+.section__reincarnation-block {
+    padding-top: 40px;
+}
+
 .section__reincarnation-block-text {
+    margin-top: 40px;
     font-size: 22px;
     line-height: 1.73;
 }
@@ -213,6 +266,26 @@ ul {
 .section__reincarnation-block-text-color {
     font-weight: 600;
 }
+
+.section__reincarnation-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-width: 499px;
+}
+
+.section__reincarnation-box-cheek,
+.section__reincarnation-box-neck {
+    width: 327px;
+    height: 328px;
+    border-radius: 50%;
+}
+
+.section__reincarnation-box-neck {
+    margin-left: auto;
+}
+
+/*  */
 
 /* Footer */
 
